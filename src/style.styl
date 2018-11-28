@@ -1,0 +1,52 @@
+@import './components/modal/modal.styl'
+
+body 
+    position relative
+    margin 0
+    .App
+        display: flex
+        justify-content: center
+        align-items: center
+        height 100vh
+        .myMenu
+            position: fixed
+            display: flex
+            padding: 10px
+            margin: 0
+            list-style: none
+            background-color: lightblue
+            visibility hidden
+            justify-content: space-around
+            &.menuLeft
+                left 0
+                top 0
+                height 100%
+                width: 100px
+                flex-direction: column
+            &.menuRight
+                right: 0
+                top 0
+                height 100%
+                width: 100px
+                flex-direction: column
+            &.menuTop
+                top 0
+                left 0
+                height: 100px
+                width 100%
+                flex-direction: row
+            &.menuBottom
+                bottom: 0
+                left: 0
+                height: 100px
+                width 100%
+                flex-direction: row
+            &.active
+                visibility: visible
+            .menuItem
+                font-size: 14px
+        .visibility
+            width: 20px
+            height 20px
+            background-color: red
+            border-radius: 50%

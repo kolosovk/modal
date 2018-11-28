@@ -1,0 +1,32 @@
+.myModal
+    position: fixed
+    width 100%
+    height 100%
+    background: lightgrey 
+    top 0
+    left 0
+    display: flex
+    z-index: 999
+    opacity 0
+    transition: 0.3s
+    visibility hidden
+    justify-content: center
+    align-items: center
+    &.open
+        transition: 0.3s
+        opacity 1
+        visibility: visible 
+    .wrapper
+        padding: 15px 10px
+        background-color: white
+        border-radius: 8px
+        position relative
+        .closeModal
+            position: absolute
+            right 15px
+            top 15px
+            transform: rotate(45deg)
+            font-size: 20px
+            color: red
+            cursor pointer
+            font-weight: 900px
